@@ -6,8 +6,7 @@ public class tankCapMain extends WaterCapacity {
 		// TODO Auto-generated method stub
 		
 		WaterCapacity ob = new WaterCapacity();
-		ob.fillTank(0);
-
+		ob.fillTank();
 	}
 
 }

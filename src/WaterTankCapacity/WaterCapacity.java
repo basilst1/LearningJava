@@ -1,26 +1,49 @@
 package WaterTankCapacity;
 
+import java.util.Scanner;
+
 public class WaterCapacity {
-	int tankCapacity;
-	int bucketCapacity;
+	int tankCapacity=100;
+	int bucketCapacity=10;
+	int i=0;
+	int currentVolume=0;
+	
+	
 
-	int tankCapacity1 = 100;
-	int bucketCapacity1 = 10;
+	
+	void fillTank() {
+       
+        for (i=0; i<=tankCapacity; i+=10);
+        System.out.println("Tank filled by 10lit ");
+    
+        
+	}
+}
 
-	void fillTank(int bucketCapacity) {
-        int currentVolume = 0;
-		int capacity = 0;
-		while (currentVolume < capacity) {
-            if (currentVolume + bucketCapacity <= capacity) {
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+		/*while (currentVolume < tankCapacity) {
+            if (currentVolume + bucketCapacity <= tankCapacity) {
                 currentVolume += bucketCapacity;
                 System.out.println("filled");
                 } 
             else {
-                int remainingSpace = capacity - currentVolume;
-                currentVolume = capacity;
-                System.out.println("Filled "+remainingSpace+" litres. Tank is now full");
+                dint remainingSpace = bucketCapacity - currentVolume;
+                currentVolume = bucketCapacity;
+                System.out.println("Filled "+remainingSpace+" liters. Tank is now full");
                 break;
             }
-        }
-	}
-}
+        }*/
