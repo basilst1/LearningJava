@@ -21,24 +21,23 @@ public class phoneBrand {
 	}
 
 	void getModelName() {
-		
+
 		System.out.println("Enter product name:");
 		String searchPhone = sc.nextLine();
 		boolean productFound = false;
-		
+
 		for (int i = 0; i <= 2; i++) {
 			for (int j = 0; j <= 4; j++) {
 				if (phoneNames[i][j].equals(searchPhone)) {
-					productFound= true;
-					
+					productFound = true;
+
 					System.out.println("product selected is :" + searchPhone);
 				} else {
 					System.out.println("Product not found");
 				}
-				
-				
+
 			}
-	
+
 		}
 	}
 }
