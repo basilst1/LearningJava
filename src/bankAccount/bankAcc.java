@@ -5,7 +5,7 @@ public class bankAcc {
 	
 	import java.util.Scanner;
 
-	// Bank Operations class
+	
 	class BankOperations {
 	    protected double balance;
 
@@ -36,7 +36,7 @@ public class bankAcc {
 	    }
 	}
 
-	// ATM class extending Bank Operations
+
 	class ATM extends BankOperations {
 	    private int pin;
 
@@ -50,7 +50,7 @@ public class bankAcc {
 	    }
 	}
 
-	// Online Banking class extending Bank Operations
+	
 	class OnlineBanking extends BankOperations {
 	    private String bankingPassword;
 
@@ -64,7 +64,6 @@ public class bankAcc {
 	    }
 	}
 
-	// Person class with account details
 	class Person {
 	    private String accountNo;
 	    private String accountHolderName;
@@ -87,18 +86,14 @@ public class bankAcc {
 	    }
 	}
 
-	// Main class
 	public class Main {
 	    public static void main(String[] args) {
-	        // Create a person with initial deposit, ATM pin, and online banking password
 	        Person person = new Person("123456789", "John Doe", 1000.0, 1234, "password123");
 
-	        // Prompt the user to choose ATM or Online Banking
 	        System.out.println("Choose banking service (1 for ATM, 2 for Online Banking): ");
 	        Scanner scanner = new Scanner(System.in);
 	        int choice = scanner.nextInt();
 
-	        // Validate the ATM pin or online banking password
 	        boolean isValid = false;
 
 	        if (choice == 1) {
@@ -112,7 +107,6 @@ public class bankAcc {
 	        }
 
 	        if (isValid) {
-	            // Perform the desired operation
 	            System.out.println("Choose operation (1 for Withdraw, 2 for Deposit, 3 for View Balance): ");
 	            int operation = scanner.nextInt();
 
@@ -137,7 +131,6 @@ public class bankAcc {
 	            System.out.println("Invalid ATM pin or online banking password. Exiting.");
 	        }
 
-	        // Close the scanner
 	        scanner.close();
 	    }
 	}
