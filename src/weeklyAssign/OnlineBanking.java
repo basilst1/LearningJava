@@ -1,5 +1,7 @@
 package weeklyAssign;
 
-public class OnlineBanking {
+public class OnlineBanking extends bankOperation{
+	
+	
 
 }
